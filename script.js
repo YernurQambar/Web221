@@ -294,7 +294,7 @@ function createProductCard(product) {
              onerror="this.src=''">
         <h3 class="product-name">${productName}</h3>
         <p class="product-category">${productCategory}</p>
-        <p class="product-price">$${price.toFixed(2)}</p>
+        <p class="product-price">₸${price.toFixed(2)}</p>
         <button class="add-to-cart-btn" onclick="addToCart(${product.id})">
             Add to Cart
         </button>
@@ -515,7 +515,7 @@ function updateCartDisplay() {
                  onerror="this.src=''">
             <div class="cart-item-info">
                 <div class="cart-item-name">${item.name}</div>
-                <div class="cart-item-price">$${itemPrice.toFixed(2)} each</div>
+                <div class="cart-item-price">₸${itemPrice.toFixed(2)} each</div>
             </div>
             <div class="quantity-controls">
                 <button class="quantity-btn" onclick="updateQuantity(${item.id}, -1)">-</button>
