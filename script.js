@@ -368,7 +368,7 @@ function calculateCombo() {
         resultBox.innerHTML = "Ничего не найдено в пределах бюджета.";
     } else {
         resultBox.innerHTML = `<strong>Комбо на ${total.toFixed(2)}тг:</strong><br>` +
-            result.map(p => `${p.name} — ${p.price.toFixed(2)}тг`).join("<br>");
+            result.map(p => `${p.name} — ${p.price.toFixed(2)}₸`).join("<br>");
     }
 }
 
